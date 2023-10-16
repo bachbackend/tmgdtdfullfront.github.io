@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Form</title>
+
+    <link rel="stylesheet" href="test4.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculate Money Custom</h1>
+        <form id="transaction-form">
+            <label for="totalAmount">Total Amount:</label>
+            <input type="number" id="totalAmount" name="totalAmount" placeholder="VNĐ" required>
+
+            <fieldset>
+                <legend>Selected User IDs:</legend>
+                <!-- <input class="bach" type="button" value="Chọn tất cả" id="selectAllUsers" /> -->
+                <div id="selectedUserIdsContainer" class="user-select-container"></div>
+            </fieldset>
+
+
+            <label for="individualAmounts">Individual Amounts:</label>
+            <div id="individualAmountsContainer">
+
+            </div><br><br>
+
+            <label for="transactionType">Transaction Type:</label>
+            <select id="transactionType" name="transactionType" required>
+                <option value="PAY">PAY</option>
+                <option value="ADD">ADD</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <select id="description" name="description">
+                <option value="Trừ tiền ăn">Trừ tiền ăn</option>
+                <option value="Nạp tiền">Nạp tiền</option>
+                <option value="Phạt tiền">Tiền phạt</option>
+                <option value="Tiền nước">Tiền nước</option>
+            </select>
+
+            <!-- <button type="submit">Submit</button> -->
+            <input type="submit" value="Submit" />
+        </form>
+        <a href="calculate.html">Back to Calculate</a>
+    </div>
+
+    <script src="test4.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculate Money</title>
+
+  <link rel="stylesheet" href="person_form.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculate Money</h1>
+    <form id="personForm">
+      <label>Total Amount:</label>
+      <input type="number" step="0.01" name="totalAmount" placeholder="VNĐ" />
+      <span id="vndText"></span>
+
+      <label>Select Users:</label>
+      <input class="bach" type="button" value="Chọn tất cả" id="selectAllUsers" />
+      <div id="selectedUserIds" class="user-select-container">
+
+      </div>
+
+
+      <label>Transaction Type:</label>
+      <select name="transactionType">
+        <option value="subtract_avg">Subtract Average</option>
+        <option value="add_avg">Add Average</option>
+        <option value="subtract_individual">Subtract Individual</option>
+        <option value="add_individual">Add Individual</option>
+      </select>
+
+      <label>Description:</label>
+      <select name="description" id="description">
+        <option value="Trừ tiền ăn">Trừ tiền ăn</option>
+        <option value="Nạp tiền">Nạp tiền</option>
+        <option value="Phạt tiền">Tiền phạt</option>
+        <option value="Tiền nước">Tiền nước</option>
+      </select>
+
+
+
+      <input type="submit" value="Submit" />
+    </form>
+    <a href="calculate.html">Back to Calculate</a>
+  </div>
+
+
+  <script src="person_form.js"></script>
+</body>
+
+</html>

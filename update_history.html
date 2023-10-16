@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Update History</title>
+
+  <link rel="stylesheet" href="update_history.css">
+</head>
+
+<body>
+  <h1>Update History</h1>
+  <input class="bach" type="number" id="filterInput" placeholder="Search by Person ID">
+  <table id="updateHistoryTable">
+    <thead>
+      <tr>
+        <th>Update ID</th>
+        <th>Person ID</th>
+        <th>Ngày cập nhật thông tin</th>
+        <th>Tên cũ</th>
+        <th>Dob cũ</th>
+        <th>Email cũ</th>
+        <th>Số điện thoại cũ</th>
+      </tr>
+    </thead>
+    <tbody id="updateHistoryTableBody">
+
+    </tbody>
+  </table>
+  <a href="home.html">Back to Home</a>
+
+  <script src="update_history.js"></script>
+
+
+</body>
+
+</html>

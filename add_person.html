@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add User - TMGDTD Finance</title>
+  
+  <link rel="stylesheet" href="add_person.css">
+</head>
+
+<body>
+  <div class="inner-from">
+    <form class="form">
+      <h1>Add Person</h1>
+      <div class="inner-imput">
+        <label for="name">Name: </label>
+        <input type="text" name="name" required><br>
+      </div>
+      <div class="inner-imput">
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" required class="custom-date-input"><br>
+      </div>
+      <div class="inner-imput">
+        <label for="email">Email: </label>
+        <input type="email" name="email" required maxlength="50"><br>
+      </div>
+      <div class="inner-imput">
+        <label for="phoneNumber">Phone Number: </label>
+        <input type="tel" name="phoneNumber" required pattern="0\d{9}"
+          title="Số điện thoại phải bắt đầu bằng số 0 và có đúng 10 chữ số"><br>
+      </div>
+      <div>
+        <input class="inner-button" type="submit" value="Add">
+      </div>
+      <div th:if="${error}" style="color: red;">
+        <p th:text="${error}"></p>
+      </div>
+      <a href="home.html">Back to Home</a>
+    </form>
+  </div>
+
+<script src="add_person.js"></script>
+
+
+</body>
+
+</html>

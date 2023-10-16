@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    color: #007bff;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  #filterContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #filterInput,
+  #descriptionSearch {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  table {
+    width: 100%;
+
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+    max-width: 1200px;
+    /* Tăng độ rộng tối đa của bảng */
+    margin: 0 auto;
+    /* Căn giữa bảng */
+    font-size: 16px;
+    /* Tăng kích thước chữ cho toàn bộ bảng */
+
+  }
+
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+
+  /* Custom styles for the filter section */
+  #filterContainer label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  /* Apply custom styles to the select element */
+  #descriptionSearch {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  /* Style the hover effect for table rows */
+  tbody tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    /* Tăng padding để các ô rộng hơn và dễ đọc hơn */
+    text-align: left;
+    border-right: 1px solid #ccc;
+  }
+
+  th:last-child,
+  td:last-child {
+    border-right: none;
+    /* Loại bỏ đường kẻ bên phải của cột cuối cùng */
+  }
+
+  td.add {
+    color: green;
+  }
+
+  td.pay {
+    color: red;
+  }
+
+  a.back-to-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+  }

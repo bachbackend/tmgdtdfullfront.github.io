@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Role to User</title>
+</head>
+
+<link rel="stylesheet" href="role.css">
+<body>
+    <div class = "container">
+        <h1>Assign Role to Account</h1>
+        <label for="userId">User:</label>
+        <select id="userId"></select><br><br>
+        <label for="roleId">Role:</label>
+        <select id="roleId"></select><br><br>
+        <button onclick="assignRole()">Assign Role</button>
+        <button class="back-button" onclick="window.location.href='home.html'">Back to Home</button>
+        <div id="result"></div>
+
+    </div>
+
+    <script src="role.js"></script>
+</body>
+
+</html>

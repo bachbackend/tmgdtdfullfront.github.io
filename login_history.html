@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login History</title>
+
+  <link rel="stylesheet" href="login_history.css">
+</head>
+
+<body>
+  <h1>Login History</h1>
+  <input class="bach" type="number" id="filterInput" placeholder="Search by Account ID">
+  <table id="loginHistoryTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Account ID</th>
+        <th>Account name</th>
+        <th>Login time</th>
+      </tr>
+    </thead>
+    <tbody id="loginHistoryTableBody">
+
+    </tbody>
+  </table>
+  <a href="home.html">Back to Home</a>
+
+
+  <script src="login_history.js"></script>
+
+</body>
+
+</html>

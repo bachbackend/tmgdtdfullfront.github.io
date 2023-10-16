@@ -1,0 +1,79 @@
+body,
+        h1,
+        table {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the header */
+        h1 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            /* Add margin below the header */
+        }
+
+        /* Style for the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+            /* Center the table */
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Style for table header */
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Style for table rows (alternating background color) */
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Style for the transaction history container */
+        #transactionHistory {
+            margin: 0 20px;
+            /* Add margin on both sides */
+        }
+
+        /* Style for the back link */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        .back-button {
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+        }
+
+        .back-button:hover {
+            background-color: pink;
+        }

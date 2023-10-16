@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+
+    <div class="inner-from">
+        <form id="registerForm">
+            <h1>Register</h1>
+            <div class="inner-imput">
+                <label for="userName">Username:</label>
+                <input type="text" name="userName" required>
+            </div>
+            <div class="inner-imput">
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="inner-imput">
+                <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" name="confirmPassword" required>
+            </div>
+            <div>
+                <input class="inner-button" type="submit" value="Register">
+            </div>
+            <a href="login.html">Back to login</a>
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

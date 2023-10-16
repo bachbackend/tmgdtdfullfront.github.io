@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+    background-color: white;
+  }
+
+  h1 {
+    color: #007bff;
+  }
+
+  .finance-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+  }
+
+  #menu-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    /* Tăng kích thước nút khi hover */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Thêm hiệu ứng chuyển đổi trong 0.3 giây */
+  }
+
+  #menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    animation: fade-in 0.5s ease;
+  }
+
+  #menu-items a {
+    margin: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #menu-items a:hover {
+    background-color: pink;
+  }
+
+  /* Styling for the "Powered By" paragraph */
+  .form-wrapper p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #666;
+  }
+
+  /* Animation for menu items fade-in */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }

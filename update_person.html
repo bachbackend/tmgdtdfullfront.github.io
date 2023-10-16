@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update User - Financial Theme</title>
+
+    <link rel="stylesheet" href="update_person.css">
+</head>
+
+<body>
+    <h1>Update User</h1>
+    <div class="container">
+        <form id="updateUserForm">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="dob">Date of Birth: </label>
+            <input type="date" id="dob" name="dob" required class="custom-date-input"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required maxlength="50"><br>
+            <label for="phoneNumber">Số Điện Thoại:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="0\d{9}"
+                title="Số điện thoại phải bắt đầu bằng số 0 và có đúng 10 chữ số"><br>
+
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+
+
+
+
+    <a href="get_all_persons.html">Back to list</a>
+
+  
+    <script src="update_person.js"></script>
+
+</body>
+
+</html>

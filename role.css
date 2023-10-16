@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 50;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}

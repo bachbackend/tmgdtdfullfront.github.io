@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:search="com.example.jpa.entity">
+
+<head>
+    <title>All Users - TMGDTD Finance</title>
+
+<link rel="stylesheet" href="get_all_persons.css">
+</head>
+
+<body>
+    <h1>All Users</h1>
+
+
+    <div class="search-container">
+        <input type="text" id="filterInput" placeholder="Search by name">
+        <button type="submit" id="negaBalance">Person with negative balance</button>
+        <button type="button" id="list" onclick="window.location.href='get_all_persons.html'">Back to List</button>
+    </div>
+
+    <table id="getAllUserTable">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                    <button id="getSortedButton1">↑</button>
+                    <button id="getSortedButton2">↓</button>
+                </th>
+                <th>
+                    Name
+                    <button id="getSortedButton3">↑</button>
+                    <button id="getSortedButton4">↓</button>
+                </th>
+                <th>
+                    Date of Birth
+                    <button id="getSortedButton13">↑</button>
+                    <button id="getSortedButton14">↓</button>
+                </th>
+                <!-- <th>
+                    Age
+                    <button id="getSortedButton5">↑</button>
+                    <button id="getSortedButton6">↓</button>
+                </th> -->
+                <th>
+                    Email
+                    <button id="getSortedButton7">↑</button>
+                    <button id="getSortedButton8">↓</button>
+                </th>
+                <th>
+                    Phone Number
+                    <button id="getSortedButton9">↑</button>
+                    <button id="getSortedButton10">↓</button>
+                </th>
+                <th>
+                    Total Money
+                    <button id="getSortedButton11">↑</button>
+                    <button id="getSortedButton12">↓</button>
+                </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <!-- <a href="/home.html">Back to Home</a> -->
+    <button class="back-button" onclick="window.location.href='home.html'">Back to Home</button>
+
+
+    <script src="get_all_persons.js"></script>
+</body>
+
+</html>
